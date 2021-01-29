@@ -1,0 +1,198 @@
+.web-box{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1{
+    font-size: 50px;
+}
+
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.features{
+    flex-basis: 50%;
+}
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+.feature-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon{
+    width: 50px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 5px solid #009688;
+}
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25;
+}
+
+/* Footer */
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Anton', sans-serif;
+}
+.footer-right{
+    text-align: right;
+}
+
+.menu{
+    width: 50%; height: 100px;
+    float: right;
+    font-family: 'Lilita One', cursive;
+    color: lightgreen;
+}
+.menu ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+}
+.menu ul li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(225, 225, 225, 0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10%;
+    background: linear-gradient(to top, #008aff , #00ffe7);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar::before{
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff , #00ffe7);
+    filter: blur(30px); 
+}
+#progressbar::after{
+    position: absolute;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff , #00ffe7);
+    filter: blur(30px); 
+}
+.nav_links{
+    list-style: none;
+    font-family: 'Hanalei Fill', cursive;
+    float: right;
+}
+.nav_links li a{
+    width: 150px;
+    text-decoration: none;
+    margin: 100px;
+    padding: 12px 0;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #0088a9;
+}
