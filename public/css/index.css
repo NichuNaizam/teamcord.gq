@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: cursive;
 }
 
-.main{
+.main {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -12,7 +12,7 @@
     background: linear-gradient(to right, #9c27b0, #8ecdff);
 }
 
-.title{
+.title {
     position: absolute;
     font-family: fantasy;
     font-size: 16;
@@ -21,19 +21,39 @@
     color: white;
 }
 
-.nav{
+.nav-item {
+    text-decoration: none;
+    font-family: cursive;
+}
+
+.nav {
     flex: 1;
     text-align: right;
 }
 
-.nav ul li{
+.nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0px 20px;
 }
 
-.nav ul li a{
+.nav ul li a {
     text-decoration: none;
     color: white;
 }
 
+.footer {
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    left: 1%;
+    top: 95%;
+}
+
+.ping {
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    left: 45%;
+    top: 60%;
+}
